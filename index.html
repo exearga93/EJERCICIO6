@@ -17,11 +17,17 @@
   <body>
     <div class="container">
       <h1>Temporizador</h1>
-      <input
-        type="number"
-        id="inputTime"
-        placeholder="Ingresa el tiempo en segundos"
-      />
+      <div>
+        <input type="number" id="inputMinutes" placeholder="Minutos" min="0" />
+        :
+        <input
+          type="number"
+          id="inputSeconds"
+          placeholder="Segundos"
+          min="0"
+          max="59"
+        />
+      </div>
       <div id="display">00:00:00.000</div>
       <div class="buttons">
         <button id="iniciarParar">Iniciar</button>
@@ -29,5 +35,6 @@
         <button id="reiniciar">Reiniciar</button>
       </div>
     </div>
+    <script src="./js/apps.js"></script>
   </body>
 </html>
